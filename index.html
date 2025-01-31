@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment</title>
+    <!-- Sora Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ADLaM Display google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/5feda004dd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tailwind css cdn -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisy UI cdn-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Try customizing my config -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            //
+            fontFamily: {
+              sora: ["Sora", "sans-serif"], // Default font
+              adlam: ["ADLaM Display", "cursive"], // Special font for specific elements
+            },
+
+            //
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sora max-w-screen-2xl mx-auto">
+    <!-- header section -->
+    <header>
+      <nav class="bg-[#FFF9F4] pt-6 pb-6 w-full">
+        <div class="flex justify-between items-center w-[80%] mx-auto">
+          <!-- logo header -->
+          <div class="flex space-x-3 items-center">
+            <div>
+              <img class="text-5xl block" src="assets/logo-header.png" alt="" />
+            </div>
+            <h3 class="text-2xl font-normal font-adlam max-[640px]:hidden">
+              Browse <span class="text-[#FFDC26]">4</span>Pets
+            </h3>
+          </div>
+
+          <!-- list type 1 -->
+
+          <ul class="flex space-x-8 justify-center max-[640px]:hidden">
+            <li class="text-xl font-normal"><a href="#">Find a pet</a></li>
+            <li class="text-xl font-normal"><a href="#">Breeds</a></li>
+            <li class="text-xl font-normal"><a href="#">Contact us</a></li>
+          </ul>
+
+          <!-- list type 2 -->
+          <ul
+            class="flex space-x-3 justify-center items-center max-[640px]:hidden"
+          >
+            <li>
+              <a href="#" class="text-2xl"
+                ><i class="fa-regular fa-bell"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-2xl"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><button
+                  class="text-xl font-normal pt-3 pr-8 pb-3 pl-8 border border-solid border-[#FFDC26] rounded-lg"
+                >
+                  Login
+                </button></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><button
+                  class="text-xl font-normal pt-3 pr-8 pb-3 pl-8 bg-[#FFDC26] rounded-lg"
+                >
+                  Register
+                </button></a
+              >
+            </li>
+          </ul>
+          <!-- hamburger manu -->
+          <div class="text-xl block sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main></main>
+    <!-- footer section -->
+    <footer></footer>
+  </body>
+</html>
