@@ -143,7 +143,7 @@
               <button
                 class="text-xl font-normal pt-3 pr-8 pb-3 pl-8 bg-[#FFDC26] rounded-lg"
               >
-                Find a pet
+                <span class="loading loading-spinner"></span> Find a pet
               </button>
             </div>
           </div>
@@ -330,7 +330,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -353,7 +353,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -375,7 +375,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -397,7 +397,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -419,7 +419,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -441,7 +441,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -463,7 +463,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -485,7 +485,7 @@
               />
             </div>
             <div>
-              <p><i class="fa-regular fa-star"></i>4.5</p>
+              <p><i class="fa-regular fa-star text-yellow-300"></i>4.5</p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -503,7 +503,9 @@
               />
             </div>
             <div>
-              <p class="bg-orange-400"><i class="fa-regular fa-star"></i>4.5</p>
+              <p class="">
+                <i class="fa-regular fa-star text-yellow-300"></i>4.5
+              </p>
               <p>Ped bed</p>
               <p>$39.99</p>
             </div>
@@ -518,33 +520,96 @@
         <div class="flex max-[640px]:flex-col gap-7">
           <!-- card 1 dog -->
           <div
-            class="bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] sm:w-[60%] flex items-center gap-5 max-[640px]:h-[460px]"
+            class="bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] rounded-xl w-[100%] sm:w-[60%] sm:flex sm:items-center gap-5 max-[640px]:h-[460px] max-[640px]:relative"
           >
             <!-- content div -->
-            <div class="pl-16">
-              <span> Under Price </span>
+            <div class="pl-16 max-[640px]:pt-6">
+              <span class="max-[640px]:hidden"> Under Price </span>
               <h3 class="font-adlam text-3xl">Pet Grooming Mitt</h3>
-              <span class="font-adlam text-xl">(Easy Hair Removal)</span> <br />
+              <span class="font-adlam text-xl text-white max-[640px]:hidden"
+                >(Easy Hair Removal)</span
+              >
+              <br />
               <span class="font-adlam text-5xl">$7.99</span>
             </div>
             <!-- image div -->
-            <div class="">
+            <div
+              class="max-[640px]:absolute bottom-0 right-0 max-[640px]:w-[65%]"
+            >
               <img src="assets/cute-dog-mid.png" alt="" />
             </div>
           </div>
 
           <!-- card 2 Pet  -->
           <div
-            class="bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] sm:w-[40%] relative max-[640px]:h-[460px]"
+            class="bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] rounded-lg w-[100%] sm:w-[40%] relative max-[640px]:h-[460px]"
           >
             <div class="mt-[10%] ml-[5%]">
               <h3 class="font-adlam text-3xl">T-Shirt for Dogs</h3>
 
-              <span class="font-adlam text-5xl">$7.99</span>
+              <span class="font-adlam text-5xl text-[#F9DF8A]">$7.99</span>
             </div>
 
-            <div class="absolute right-0 bottom-0">
+            <div class="absolute right-0 bottom-0 w-[65%]">
               <img src="assets/cute-pet-mid.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Challenging section -->
+      <!--Animal section -->
+
+      <section class="py-16 bg-gray-100 mt-10">
+        <div class="w-[80%] mx-auto text-center">
+          <!-- Section Title -->
+          <h2 class="text-4xl font-bold text-gray-800 mb-8">
+            Meet Our Adorable Pets
+          </h2>
+          <p class="text-lg text-gray-600 mb-12">
+            Explore our lovable pets, each with a unique personality! From
+            playful puppies to cozy kittens, there's always someone to love.
+          </p>
+
+          <!-- Pet Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Pet 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="food-image/bella.jpeg"
+                alt="Pet 1"
+                class="w-full h-64 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold text-gray-800">Bella</h3>
+              <p class="text-gray-600">
+                A playful and energetic pup who loves to chase balls!
+              </p>
+            </div>
+
+            <!-- Pet 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="food-image/kittens-cat-2.jpeg"
+                alt="Pet 2"
+                class="w-full h-64 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold text-gray-800">Milo</h3>
+              <p class="text-gray-600">
+                A curious cat who enjoys exploring new places and taking naps.
+              </p>
+            </div>
+
+            <!-- Pet 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="food-image/pexels-photo-3.jpeg"
+                alt="Pet 3"
+                class="w-full h-[260px] object-cover rounded-md mb-4"
+              />
+              <h3 class="text-2xl font-semibold text-gray-800">Luna</h3>
+              <p class="text-gray-600">
+                A sweet and gentle bunny who loves cuddles and treats.
+              </p>
             </div>
           </div>
         </div>
