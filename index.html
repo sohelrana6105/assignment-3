@@ -155,14 +155,14 @@
     </header>
     <!-- main section -->
     <main>
-      <!-- category section -->
+      <!--Browse category section -->
       <section class="mt-32 mb-32">
         <h1 class="font-adlam text-4xl w-[80%] mx-auto mb-12">
           Browse By Categories
         </h1>
         <!-- category container -->
         <div
-          class="w-[80%] mx-auto grid sm:grid-cols-6 max-[640px]:grid-cols-2 gap-3"
+          class="w-[80%] mx-auto grid max-[640px]:grid-cols-2 gap-3 sm:grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))]"
         >
           <!-- dog -->
           <div
@@ -510,8 +510,130 @@
           </div>
         </div>
       </section>
+
+      <!-- Low price section -->
+      <section class="mt-32 mb-32 w-[80%] mx-auto">
+        <h1 class="font-adlam text-4xl w-[80%] mb-12">Everyday low Price</h1>
+
+        <div class="flex max-[640px]:flex-col gap-7">
+          <!-- card 1 dog -->
+          <div
+            class="bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] sm:w-[60%] flex items-center gap-5 max-[640px]:h-[460px]"
+          >
+            <!-- content div -->
+            <div class="pl-16">
+              <span> Under Price </span>
+              <h3 class="font-adlam text-3xl">Pet Grooming Mitt</h3>
+              <span class="font-adlam text-xl">(Easy Hair Removal)</span> <br />
+              <span class="font-adlam text-5xl">$7.99</span>
+            </div>
+            <!-- image div -->
+            <div class="">
+              <img src="assets/cute-dog-mid.png" alt="" />
+            </div>
+          </div>
+
+          <!-- card 2 Pet  -->
+          <div
+            class="bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] sm:w-[40%] relative max-[640px]:h-[460px]"
+          >
+            <div class="mt-[10%] ml-[5%]">
+              <h3 class="font-adlam text-3xl">T-Shirt for Dogs</h3>
+
+              <span class="font-adlam text-5xl">$7.99</span>
+            </div>
+
+            <div class="absolute right-0 bottom-0">
+              <img src="assets/cute-pet-mid.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer section -->
-    <footer></footer>
+
+    <footer class="relative">
+      <!-- sub-footer -->
+
+      <!-- pawsome news section -->
+      <section
+        class="w-[80%] mx-auto bg-[#FFF9F4] absolute left-[10%] right-[10%] bottom-[65%] sm:bottom-[65%]"
+      >
+        <div
+          class="flex sm:justify-around max-[640px]:flex-col items-center max-[640px]:justify-center pt-9 pb-9"
+        >
+          <!-- image -->
+          <div>
+            <img src="assets/cute-pet-mid.png" alt="" />
+          </div>
+          <!-- contain -->
+          <div
+            class="max-[640px]:flex max-[640px]:flex-col max-[640px]:items-center"
+          >
+            <h1 class="font-adlam text-3xl">Get Pawsome News!</h1>
+            <p class="text-xl mt-5 mb-8 max-[640px]:w-[80%]">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+
+            <div class="max-[640px]:w-[80%]">
+              <input
+                class="bg-[#FFFFFF] rounded-lg pt-4 pb-4 pl-4 w-full"
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter email...."
+              />
+            </div>
+
+            <div>
+              <button
+                class="text-xs font-normal pt-2 pr-5 pb-2 pl-5 bg-[#FFDC26] rounded-lg mt-9"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main footer -->
+      <section
+        class="bg-[#FFDC2680] sm:pt-[350px] pt-[400px] pb-24 sm:mt-[350px] mt-[600px] sm:pb-[150px]"
+      >
+        <div
+          class="w-[80%] mx-auto flex max-[640px]:flex-col gap-10 sm:justify-between sm:items-end"
+        >
+          <!-- part1 -->
+
+          <div>
+            <div class="flex items-center mb-6">
+              <img src="assets/logo-footer.png" alt="" />
+              <h3 class="text-2xl font-normal">Browse4Pets</h3>
+            </div>
+            <p class="text-xl">
+              Discover a world of treats, toys, and <br />
+              essentials handpicked for your furry <br />
+              friends
+            </p>
+          </div>
+          <!-- part 2 -->
+          <div>
+            <p>Find a pet</p>
+            <p class="mt-8 mb-8">Breeds</p>
+            <p>Contact us</p>
+          </div>
+          <div>
+            <p>Follow Us</p>
+
+            <div class="flex gap-3">
+              <span class=""><i class="fa-brands fa-facebook"></i></span>
+              <span class=""><i class="fa-brands fa-instagram"></i></span>
+              <span class=""><i class="fa-brands fa-linkedin"></i></span>
+              <span class=""><i class="fa-brands fa-youtube"></i></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
